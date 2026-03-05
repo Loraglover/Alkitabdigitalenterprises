@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<button class="btn btn-danger btn-lg">Get Quote</button>
+	<meta charset="utf-8">
+	<title>
+		ALKITAB ENTERPRISES
+	</title>
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="logo">
+			<img src="logo.png" alt="Logo">
+		</div>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#staffs">Team</a></li>
+			<li><a href="#gallery">Projects</a></li>
+			<li><a href="#careers">Apply</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section class="hero">
+	<div class="hero-content">
+		<h1>We Build Digital Experiences and We Help Businesses Grow Digitally</h1>
+		<p>Professional Web Development | Branding | Digital Solutions</p>
+		<div class="hero-buttons">
+			<a href="#contact" class="btn primary">Work With Us</a>
+			<a href="#projects" class="btn secondary">View Our Work</a>
+		</div>
+	</div>
+</section>
+
+<section id="about" class="about">
+	<h2>About Us</h2>
+	<p> ALKITAB DIGITAL ENTERPRISES is a creative technology company focused on building modern digital solutions for businesses and startups. We combine design, technology, and strategy to help brands grow online.</p>
+</section>
+
+<section class="stats">
+	<div class="stat">
+		<h2 class="counter" data-target="75">0</h2>
+		<p>Web Projects Completed</p>
+	</div>
+	<div class="stat">
+		<h2 class="counter" data-target="40">0</h2>
+		<p>Happy Clients</p>
+	</div>
+	<div class="stat">
+		<h2 class="counter" data-target="5">0</h2>
+		<p>Years Experience</p>
+	</div>
+</section>
+
+<section id="staffs" class="staffs">
+	<h2>Our Team</h2>
+	<div class="staff-box">
+		<div class="staff-card">
+			<img src="staff1.jpg" alt="Staff 1">
+			<h3>Ibrahim Shuaibu Bulama</h3>
+			<p>CEO/MD</p>
+		</div>
+		<div class="staff-card">
+			<img src="staff2.jpg" alt="Staff 2">
+			<h3>Ibrahim Bulama</h3>
+			<p>Project Manager</p>
+		</div>
+	</div>
+</section>
+
+<section id="services" class="services">
+	<h2>Our Digital Services</h2>
+	<div class="service-box">
+		<div class="card">
+			<h3>Website Development</h3>
+			<p>Modern Responsive websites for businesses.</p>
+		</div>
+		<div class="card">
+			<h3>Graphic Design</h3>
+			<p>Logos, branding, flyers, video editing, invitation card & social media design.</p>
+		</div>
+		<div class="card">
+			<h3>Digital Marketing</h3>
+			<p>Grow your brand online with smart strategies.</p>
+		</div>
+		<div class="card">
+			<h3>IT Solutions</h3>
+			<p>Networking, system setup & tech support.</p>
+		</div>
+		<div class="card">
+			<h3>Projects</h3>
+			<p>we help you with your project work.</p>
+		</div>
+		<div class="card">
+			<h3>Data Analysis</h3>
+			<p>We help you with your data presentation, analysis and interpretations.</p>
+		</div>
+	</div>
+</section>
+
+<section class="why-us">
+	<h2>Why Choose Us</h2>
+	<div class="why-box">
+		<div class="why-card">
+			<h3>Professional Team</h3>
+			<p>Skilled designers and developers delivering high-quality work.</p>
+		</div>
+		<div class="why-card">
+			<h3>Fast Delivery</h3>
+			<p>We complete projects on time without compromising quality.</p>
+		</div>
+		<div class="why-card">
+			<h3>Affordable Pricing</h3>
+			<p>Premium digital services at competitive good rates.</p>
+		</div>
+	</div>
+</section>
+
+<section id="gallery" class="gallery">
+	<h2>Our Projects</h2>
+	<div class="gallery-box">
+		<img src="https://picsum.photos/400/300?1" onclick="openImage(this.src)">
+		<img src="https://picsum.photos/400/300?1" onclick="openImage(this.src)">
+		<img src="https://picsum.photos/400/300?1" onclick="openImage(this.src)">
+	</div>
+</section>
+
+<div id="lightbox" onclick="closeImage()">
+	<img id="lightbox-img">
+</div>
+
+<section id="careers" class="careers">
+    <h2>Apply Here</h2>
+    <p>We are looking for talented web developers, designers, marketers, data analysis, graphic designers and video editors.</p>
+
+    <form name="job-application" method="POST" data-netlify="true" enctype="multipart/form-data">
+        
+        <input type="hidden" name="form-name" value="job-application">
+
+        <input type="text" name="Surname-name" placeholder="Surname Name" required>
+        <input type="text" name="Other-name" placeholder="Other Name" required>
+        <input type="text" name="Phone Number" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="position" placeholder="Position Applying For" required>
+        <input type="text" name="Course" placeholder="Course of Study" required>
+        <input type="text" name="Gender" placeholder="Gender" required>
+
+        <label>Upload Your CV:</label>
+        <input type="file" name="cv" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+
+<section id="contact" class="contact">
+	<h2>Contact Us</h2>
+	<p>📍 Potiskum, Yobe State, Nigeria</p>
+	<p>📞 +2348108415465 | +2349126235939</p>
+	<button>Send Message</button>
+</section>
+
+<section id="contact" class="contact">
+	<h2>Or Send a Message</h2>
+
+	<form action="https://formspree.io/f/xaqdgwkq" method="POST">
+		<input type="text" name="name" placeholder="Your Name" required>
+		<input type="email" name="email" placeholder="Your Email" required>
+		<textarea name="message" placeholder="Your Message" required></textarea>
+		<button type="submit">Send Message</button>
+	</form>
+</section>
+
+<footer>
+	<p>© 2026 ALKITAB DIGITAL ENTERPRISES. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/2348108415465" class="whatsapp" target="_blank">
+	WHATSAPP
+</a>
+<script src="script.js"></script>
+</body>
+</html>
